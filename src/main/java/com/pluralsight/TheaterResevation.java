@@ -12,12 +12,17 @@ public class TheaterResevation {
         String fullName = scanner.nextLine();
 
         System.out.println("What date will you be coming(MM/dd/yyyy): ");
-        String date = scanner.nextLine();
+        String dateAsString= scanner.nextLine(); //user need to input date
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        LocalDate date =LocalDate.parse(dateAsString, formatter);
+
 
         System.out.println("How many tickets will you like? ");
         int ticketAmount = scanner.nextInt();
 
-//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(date, formatter);
+
+
+
 //        (x) tickets reserved for yyyy-mm-dd under (Last), (First)
         System.out.printf("%d tickets reserved for %s under %s",ticketAmount,date,fullName);
     }
