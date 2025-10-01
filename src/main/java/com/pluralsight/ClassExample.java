@@ -12,6 +12,11 @@ public class ClassExample {
         car2.setMake("Ford");
         car2.setModel("Mustang");
         car2.display();
+
+        Car car3 = new Car();
+        car3.setMake("Audi");
+        car3.setModel("R5");
+        car3.display();
     }
 
 

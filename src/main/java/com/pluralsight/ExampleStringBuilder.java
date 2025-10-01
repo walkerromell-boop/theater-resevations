@@ -23,7 +23,10 @@ public class ExampleStringBuilder {
 //        String mySkills = skills.toString();
 //        System.out.println(mySkills);
 
-
+        Car car3 = new Car();
+        car3.setMake("Audi");
+        car3.setModel("R5");
+        car3.display();
 
 
 
