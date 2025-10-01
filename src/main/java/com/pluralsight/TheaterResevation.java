@@ -10,7 +10,14 @@ public class TheaterResevation {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your Full Name: ");
         String fullName = scanner.nextLine();
+        String[] fullNameSplit= fullName.trim().split(" ");
 
+
+        //        String input = "Dallas|Ft. Worth|Austin"; this is how we do a split in string.
+//        String[] cities = input.split(Pattern.quote("|"));
+//        // cities is an array containing 3 strings
+//        // [0] is Dallas, [1] is Ft. Worth, [2] is Auston
+//        System.out.println(cities[1]);
         System.out.println("What date will you be coming(MM/dd/yyyy): ");
         String dateAsString= scanner.nextLine(); //user need to input date
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
@@ -24,6 +31,6 @@ public class TheaterResevation {
 
 
 //        (x) tickets reserved for yyyy-mm-dd under (Last), (First)
-        System.out.printf("%d tickets reserved for %s under %s",ticketAmount,date,fullName);
+        System.out.printf("%d tickets reserved for %s under %s, %s",ticketAmount,date,fullNameSplit[0],fullNameSplit[1]);
     }
 }
