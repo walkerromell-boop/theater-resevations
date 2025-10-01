@@ -5,8 +5,14 @@ public class ClassExample {
         Car car1 = new Car();
         car1.setMake("Nissan");
         car1.setModel("Helltima");
-        System.out.println(car1.getMake() + " " + car1.getModel());
+        car1.display(); //this is how you call for a method on instance of an object
+        // variable.display
 
-
+        Car car2 = new Car();
+        car2.setMake("Ford");
+        car2.setModel("Mustang");
+        car2.display();
     }
+
+
 }
