@@ -14,7 +14,7 @@ public class TheaterResevation {
 
 
         //        String input = "Dallas|Ft. Worth|Austin"; this is how we do a split in string.
-//        String[] cities = input.split(Pattern.quote("|"));
+//        String[] cities = input.split(Pattern.quote("|")); you have to add brackets in order to put it into arrays
 //        // cities is an array containing 3 strings
 //        // [0] is Dallas, [1] is Ft. Worth, [2] is Auston
 //        System.out.println(cities[1]);
