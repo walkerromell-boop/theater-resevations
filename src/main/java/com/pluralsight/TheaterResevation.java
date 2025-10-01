@@ -10,7 +10,7 @@ public class TheaterResevation {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your Full Name: ");
         String fullName = scanner.nextLine();
-        String[] fullNameSplit= fullName.trim().split(" ");
+        String[] fullNameSplit= fullName.trim().split(" "); //always trim first and the split etc.(clean up your products)
 
 
         //        String input = "Dallas|Ft. Worth|Austin"; this is how we do a split in string.
